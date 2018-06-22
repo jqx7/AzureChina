@@ -25,7 +25,7 @@ def azurearm_credentials():
 
 #-------------------------------------resourcegroup--------------------------------------
 #Resource Group Generated
-def create_resource_group(resource_client):
+def create_resource_group(resourcegroup_client):
     resourcegroup_result = resourcegroup_client.resource_groups.create_or_update(GROUP_NAME,{'location':LOCATION})
     return resourcegroup_result
 
